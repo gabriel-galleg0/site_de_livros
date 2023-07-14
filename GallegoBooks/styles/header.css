@@ -1,0 +1,64 @@
+.cabecalho_menu_hamb{
+    width: 1.5rem;
+    height: 3.12rem;
+    background-image: url(../img/icons8-cardápio-50.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container_imagem{
+    padding: 1em;
+    justify-content: center;
+    
+}
+
+.container_imagem_hollow{
+    padding: 0.3em;
+    justify-content: space-between;
+}
+
+.lista__menu{
+    display: none;
+    position:absolute;
+    top: 100%;
+    width: 45vw;
+}
+
+.container_botao{
+    display: none;
+}
+
+.container_botao:checked ~ .lista__menu{
+    display: block;
+}
+
+.lista_menu_title, .lista_menu_item{
+    padding: 1em;
+    background-color: var(--branco);
+
+}
+
+.lista_menu_title{
+    color: var(--roxo);
+}
+
+.lista_menu_link{
+    color: var(--preto);
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+@media screen and (min-width: 1024px)
