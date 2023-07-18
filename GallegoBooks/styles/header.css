@@ -1,0 +1,147 @@
+.cabecalho_menu_hamb{
+    width: 1.5rem;
+    height: 3.12rem;
+    background-image: url(../img/icons8-cardápio-50.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container_imagem{
+    padding: 1em;
+    justify-content: center;
+    
+}
+
+.container_imagem_hollow{
+    padding: 0.3em;
+    justify-content: space-between;
+}
+
+.lista__menu{
+    display: none;
+    position:absolute;
+    top: 100%;
+    width: 45vw;
+}
+
+.container_botao{
+    display: none;
+}
+
+.container_botao:checked ~ .lista__menu{
+    display: block;
+}
+
+.lista_menu_title, .lista_menu_item{
+    padding: 1em;
+    background-color: var(--branco);
+
+}
+
+.lista_menu_title{
+    color: var(--roxo);
+}
+
+.lista_menu_link{
+    color: var(--preto);
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.container_titulo{
+    display: none;
+}
+
+ .opções{
+    display: none;
+ }
+
+ .container_texto{
+    display: none;
+ }
+
+@media screen and (min-width: 1024px) {
+    .container_titulo, .container_titulo-negrito{
+        font-family: var(--fonte-logo);
+        font-size: 30px;
+    }
+    .container_titulo{
+        font-weight: 400;
+        display: block;
+    }
+    .container_titulo-negrito{
+        font-weight: 700;
+    }
+
+    .opções{
+        display: flex;
+    }
+    .opções_item{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+    .opções_link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .container_coracao{
+        display: none;
+    }
+    .cabecalho_menu_hamb{
+        display: none;
+    }
+    .opções_botão:checked ~ .lista__menu{
+        display: block;
+        width: auto;
+    }
+
+    .opções_botão{
+        display: none;
+    }
+    .opções_botão:checked~ .opções_rotulo > .opções_item{
+        background: var(--degrade);
+        color: var(--branco);
+    }
+    .opções_item{
+        padding: 2em 1em;
+    }
+    .lista_menu_item:hover{
+        background: var(--degrade);
+    }
+    .lista_menu_item:hover > .lista_menu_link{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .container_link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .cabecalho{
+        padding: 0 2em;
+    }
+
+    .opções{
+        margin-right: auto;
+    }
+    .container_texto{
+        display: block;
+    }
+} 

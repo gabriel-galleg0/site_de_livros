@@ -1,0 +1,21 @@
+@import url("/styles/header.css");
+@import url("/styles/banner.css");
+@import url("/styles/carrossel.css");
+@import url("/styles/contato.css");
+@import url("/styles/rodape.css");
+
+:root{
+    --cor-fundo:#e6d5e6;
+    --branco:#ffffff;
+    --roxo:#7d14ed;
+    --roxo-claro: #5b14a6;
+    --preto: #000; 
+    --degrade: linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
+    --azul: #1c2670;
+    --laranja: #d3680a; 
+    --fonte-logo: "Josefin Sans";
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
